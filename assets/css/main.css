@@ -15,6 +15,72 @@
 	float: left;
   }
 
+  .formright {
+	display: block;
+	margin-left: auto;
+	margin-right: auto - 60%;
+	margin-top: auto;
+	width: 50%;
+  }
+
+
+  .containertest {
+	display: flex;
+	align-items: center; /* Align items vertically */
+}
+
+.imagetest {
+	width: 150px; /* Adjust image width as needed */
+	height: auto; /* Maintain aspect ratio */
+	margin-right: 20px; /* Add some space between image and text */
+}
+
+
+
+  .picture-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.picture {
+	margin: 0;
+}
+.third-picture {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+}
+@media (min-width: 768px) {
+	.picture-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.third-picture {
+		grid-column: 3;
+		grid-row: auto;
+	}
+}
+
+.texttest {
+	flex: 1; /* Allow text to take up remaining space */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 .skill-wrapper{
@@ -1650,6 +1716,9 @@ input, select, textarea {
 		max-width: 100%;
 		z-index: 3;
 	}
+
+
+	
 
 		#main article {
 			-moz-transform: translateY(0.25rem);
